@@ -9,7 +9,7 @@ author: FEZ
 # 项目环境
 # 静态资源找不到，链接点进去不对时请检查下这里的配置
 # demo.com访问设置为""，demo.com/blog/访问设置为"/blog"
-context: "/fez.github.io"
+context: "/fez"
 
 # 用来生成sitemap
 siteMapPrefix: "https://really-dream.github.io/fez.github.io/"
