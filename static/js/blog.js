@@ -1,7 +1,7 @@
 
 /**
  * 工具，允许多次onload不被覆盖
- * @param {方法} func 
+ * @param {方法} func
  */
 blog.addLoadEvent = function (func) {
     var oldonload = window.onload;
@@ -17,10 +17,10 @@ blog.addLoadEvent = function (func) {
 
 /**
  * 工具，兼容的方式添加事件
- * @param {单个DOM节点} dom 
- * @param {事件名} eventName 
- * @param {事件方法} func 
- * @param {是否捕获} useCapture 
+ * @param {单个DOM节点} dom
+ * @param {事件名} eventName
+ * @param {事件方法} func
+ * @param {是否捕获} useCapture
  */
 blog.addEvent = function (dom, eventName, func, useCapture) {
     if (window.attachEvent) {
@@ -36,8 +36,8 @@ blog.addEvent = function (dom, eventName, func, useCapture) {
 
 /**
  * 工具，DOM添加某个class
- * @param {单个DOM节点} dom 
- * @param {class名} className 
+ * @param {单个DOM节点} dom
+ * @param {class名} className
  */
 blog.addClass = function (dom, className) {
     if (!blog.hasClass(dom, className)) {
@@ -49,8 +49,8 @@ blog.addClass = function (dom, className) {
 
 /**
  * 工具，DOM是否有某个class
- * @param {单个DOM节点} dom 
- * @param {class名} className 
+ * @param {单个DOM节点} dom
+ * @param {class名} className
  */
 blog.hasClass = function (dom, className) {
     var list = (dom.className || '').split(/\s+/);
@@ -63,8 +63,8 @@ blog.hasClass = function (dom, className) {
 
 /**
  * 工具，DOM删除某个class
- * @param {单个DOM节点} dom 
- * @param {class名} className 
+ * @param {单个DOM节点} dom
+ * @param {class名} className
  */
 blog.removeClass = function (dom, className) {
     if (blog.hasClass(dom, className)) {
@@ -80,8 +80,8 @@ blog.removeClass = function (dom, className) {
 
 /**
  * 工具，DOM切换某个class
- * @param {单个DOM节点} dom 
- * @param {class名} className 
+ * @param {单个DOM节点} dom
+ * @param {class名} className
  */
 blog.toggleClass = function (dom, className) {
     if (blog.hasClass(dom, className)) {
@@ -93,7 +93,7 @@ blog.toggleClass = function (dom, className) {
 
 /**
  * 工具，兼容问题，某些OPPO手机不支持ES5的trim方法
- * @param {字符串} str 
+ * @param {字符串} str
  */
 blog.trim = function (str) {
     return str.replace(/^\s+|\s+$/g, '');
@@ -118,32 +118,32 @@ blog.addLoadEvent(function () {
 
 
 // 回到顶部
-blog.addLoadEvent(function () {
-    var upDom = document.getElementsByClassName('footer')[0].getElementsByClassName('up')[0];
-    function getScrollTop() {
-        if (document.documentElement && document.documentElement.scrollTop) {
-            return document.documentElement.scrollTop;
-        } else if (document.body) {
-            return document.body.scrollTop;
-        }
-    }
-
-    blog.addEvent(window, 'scroll', function () {
-        if (getScrollTop() > 200) {
-            blog.addClass(upDom, 'show');
-        } else {
-            blog.removeClass(upDom, 'show');
-        }
-    });
-
-    blog.addEvent(upDom, 'click', function () {
-        if (document.documentElement && document.documentElement.scrollTop) {
-            document.documentElement.scrollTop = 0;
-        } else if (document.body) {
-            document.body.scrollTop = 0;
-        }
-    });
-});
+// blog.addLoadEvent(function () {
+//     var upDom = document.getElementsByClassName('footer')[0].getElementsByClassName('up')[0];
+//     function getScrollTop() {
+//         if (document.documentElement && document.documentElement.scrollTop) {
+//             return document.documentElement.scrollTop;
+//         } else if (document.body) {
+//             return document.body.scrollTop;
+//         }
+//     }
+// 
+//     blog.addEvent(window, 'scroll', function () {
+//         if (getScrollTop() > 200) {
+//             blog.addClass(upDom, 'show');
+//         } else {
+//             blog.removeClass(upDom, 'show');
+//         }
+//     });
+//
+//     blog.addEvent(upDom, 'click', function () {
+//         if (document.documentElement && document.documentElement.scrollTop) {
+//             document.documentElement.scrollTop = 0;
+//         } else if (document.body) {
+//             document.body.scrollTop = 0;
+//         }
+//     });
+// });
 
 
 // 文字冒泡-社会主义核心价值观
