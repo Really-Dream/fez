@@ -18,7 +18,8 @@ categories: [Activiti]
 </dependency>
 ```
 > springboot的版本
-```
+
+```xml
 <parent>
 	<groupId>org.springframework.boot</groupId>
 	<artifactId>spring-boot-starter-parent</artifactId>
@@ -27,7 +28,7 @@ categories: [Activiti]
 </parent>
 ```
 #### **2.配置数据库和activiti基础设置**
-```
+```yml
 spring:
   datasource:
     url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8&useSSL=false
