@@ -1,23 +1,24 @@
-encoding: utf-8
+name: "rusty shutter"
+permalink: /:year/:month/:day/:title.html
 
-# SEO相关信息
-title: TMaize Blog
-description: TMaize Blog
-keywords: TMaize,Blog,Java,Android,Html,Css,Js,算法
-author: TMaize
+author: "wayne"
+atom-baseurl: "http://lhzhang.com"
+disqus: "gopherwood"
 
-# 项目环境
-# 静态资源找不到，链接点进去不对时请检查下这里的配置
-# demo.com访问设置为""，demo.com/blog/访问设置为"/blog"
-context: "/fez.github.io"
+navigations:
+  - title: Archive
+    class: fa fa-list-ul
+    href: /archive.html
+  - title: Tags
+    class: fa fa-tags
+    href: /tags.html
+  - title: About
+    class: fa fa-user
+    href: /about.html
+  - title: Gallery
+    class: fa fa-film
+    href: http://foto.lhzhang.com
+  - title: Subscribe
+    class: fa fa-rss
+    href: /atom.xml
 
-
-## 文章url前缀，固定格式，不要动
-permalink: /posts/:year/:month/:day/:title.html
-
-# 页面底部信息
-copyright: 2016
-record: "皖ICP备16016174号"
-
-coderay:
-  coderay_tab_width: 4
