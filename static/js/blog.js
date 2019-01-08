@@ -127,7 +127,7 @@ blog.addLoadEvent(function () {
 //             return document.body.scrollTop;
 //         }
 //     }
-// 
+//
 //     blog.addEvent(window, 'scroll', function () {
 //         if (getScrollTop() > 200) {
 //             blog.addClass(upDom, 'show');
@@ -148,7 +148,7 @@ blog.addLoadEvent(function () {
 
 // 文字冒泡-社会主义核心价值观
 blog.addLoadEvent(function () {
-    var texts = ["富强", "民主", "文明", "和谐", "自由", "平等", "公正", "法治", "爱国", "敬业", "诚信", "友善"];
+    var texts = ["小饼干", "小饼干", "小饼干", "小饼干", "小饼干", "小饼干", "小饼干", "小饼干", "小饼干", "小饼干", "小饼干", "小饼干"];
     blog.addEvent(window, 'click', function (ev) {
         var span = document.createElement('span');
         span.innerText = texts[parseInt(Math.random() * texts.length)];
