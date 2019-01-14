@@ -64,18 +64,22 @@ public class DemoApplication {
 	}
 }
 ```
+
 >再次访问modeler页面
 
 ![这里写图片描述](https://wx4.sinaimg.cn/mw690/becbe214gy1fq7cah1v0qj21f80sa417.jpg)
+
 
 >处理 `/activiti-explorer/service/model//json` 请求的报错
 
 该请求的控制类为`ModelEditorJsonRestResource.java`
 
+
 ```
 @RequestMapping(value="/model/{modelId}/json", method = RequestMethod.GET, produces = "application/json")
 ```
 在`/public/editor-app/app-cfg.js`文件中修改请求的地址
+
 
 ```js
 ACTIVITI.CONFIG = {
@@ -90,7 +94,9 @@ ACTIVITI.CONFIG = {
 这是因为我们没有已经建好的model模型，无法查看
 
 #### **5.新建model**
+
 > 测试类
+
 ```
 @Controller
 @RequestMapping("model")
@@ -134,11 +140,15 @@ public class ModelTest {
 
 }
 ```
+
 > 访问`localhost:8080/model/create`
+
 
 ![这里写图片描述](https://wx2.sinaimg.cn/mw690/becbe214gy1fq7dx00vb8j21h70sg0w4.jpg)
 
+
 >处理`http://localhost:8080/editor/stencilset?version=1523329753442`请求的报错
+
 
 在StencilsetRestResource.java中，我们项目中少了stencilset.json
 ```java
@@ -157,7 +167,9 @@ public class StencilsetRestResource {
   }
 }
 ```
+
 > 下载[stencilset.json](https://pan.baidu.com/s/1RV-71YHWnYxWINO5mdUZbA)，并放置在resources目录下
+
 >  再次访问`localhost:8080/model/create`
 
 #### **6.保存Model**
