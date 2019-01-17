@@ -4,6 +4,10 @@ title: 集成Activiti Modeler
 categories: [Activiti]
 ---
 
+> Activiti6.0.0及以上版本与activiti-modeler的maven引用有冲突，解决方法参考
+> [Activiti6.0.0及以上版本集成Activiti Modeler](https://really-dream.github.io/fez/posts/2019/01/17/Activiti6.0.0%E5%8F%8A%E4%BB%A5%E4%B8%8A%E7%89%88%E6%9C%AC%E9%9B%86%E6%88%90Activiti-Modeler.html)
+
+
 #### **1.下载源文件**
 
 [activiti-5.22.0官方Demo](https://pan.baidu.com/s/1Lv3zSBpPNW4d6M6DXPsoTw)
